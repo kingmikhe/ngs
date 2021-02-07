@@ -1,19 +1,24 @@
 {
-  "name": "4-scripts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "jest",
-    "check": "eslint server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "eslint": "^5.4.0",
-    "express": "^4.16.3",
-    "jest": "^23.4.0"
-  }
+    "name": "4-scripts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "jest",
+        "check": "eslint server.js",
+        "postcheck": "node -e 'console.log(\"Done checking\")'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.3",
+        "jest": "^23.4.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.19.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1"
+    }
 }
